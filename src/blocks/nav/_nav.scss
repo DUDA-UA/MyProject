@@ -1,0 +1,44 @@
+.nav{
+    padding-top: 55px;
+
+    &__logo{
+
+        &__title{
+            color: #f1cdb3;
+            font-family: Georgia;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        &__subtitle{
+            color: white;
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 29px;
+        }
+    }
+
+    &__links{
+
+        &__box{
+
+            &--item{
+
+                &-link{
+                    color: #cdcdcd;
+                    font-family: Arial;
+                    font-size: 15px;
+                    font-weight: 400;
+                    border-bottom: transparent;
+                    text-decoration: none;
+
+                    &:hover{
+                        border-bottom:3px solid #f1cdb3;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+mixin donation
+    .donation
+        .container
+            .row
+                .col-xl-6
+                    .donation__img
+                        img.donation__img__item(src="img/Dog.png")
+                .col-xl-6
+                    .donation__info
+                        h3.donation__info__title In addition, you
+                        br 
+                        |can make a donation
+                        .donation__info__bank
+                            input#nameBank(type="text", name="nameBank" placeholder="Name of the bank")
+                            span / 
+                            input#nameBank(type="text", name="nameBank" placeholder="Type of bank account")
+                        input#bankCard(type="text", data-mask="0000-0000-0000-0000")
