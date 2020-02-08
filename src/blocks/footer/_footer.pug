@@ -1,8 +1,8 @@
 mixin footer
     .footer
         .container
-            .row.d-flex.flex-column-reverse
-                .col-12.d-flex.flex-column.justify-content-center
+            .row.flex-md-row.d-flex.flex-column-reverse
+                .col-md-4.col-12.d-flex.flex-column.justify-content-center
                     h3.footer__title For questions 
                         br 
                         |and suggestions
@@ -12,7 +12,7 @@ mixin footer
                     .footer__tel.footer__block
                         img.footer__block__img(src="./img/telephone.png")
                         a.footer__block__info(href="tel:+13 674 567 75 54") 13 674 567 75 54
-                .col-12.d-flex.flex-column
+                .col-md-4.col-12.d-flex.flex-column.justify-content-center
                     h3.footer__title We are waiting 
                         br 
                         |for your visit
@@ -24,6 +24,6 @@ mixin footer
                     .footer__adress2.footer__block
                         img.footer__block__img(src="./img/pin.png", alt="point2")
                         p.footer__block__info London, South Park, 18st
-                .col-12
+                .col-md-4.col-12
                     .footer__img
                         img.footer__img--item(src="./img/CatFooter.png")

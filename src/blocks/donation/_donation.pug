@@ -2,10 +2,10 @@ mixin donation
     .donation
         .container
             .row
-                .col-xl-6
+                .col-xl-6.col-12
                     .donation__img
                         img.donation__img__item(src="img/Dog.png")
-                .col-xl-6
+                .col-xl-6.col-12
                     .donation__info
                         h3.donation__info__title In addition, you
                             br 
@@ -14,7 +14,7 @@ mixin donation
                             input#nameBank.nameBank(type="text", name="nameBank" placeholder="Name of the bank" size='1')
                             span / 
                             input#nameBank(type="text", name="nameBank" placeholder="Type of bank account")
-                        .donation__info__card.d-flex.justify-content-start.alighn-center
+                        .donation__info__card.d-flex.justify-content-xl-start.alighn-center
                             img.donation__info__card--img(src="img/credit.png", alt="credit-card")
                             input.donation__info__card--bankCard(type="text", data-mask="0000 0000 0000 0000" placeholder="8380 2880 8028 8791")
                         .donation__info__secondText
