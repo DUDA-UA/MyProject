@@ -61,17 +61,17 @@
     }
 }
 
-.slick-prev,.slick-next{
-    color: black;
-    @media screen and (max-width: 425px) {
-       display: none;
-    }
-}
-
 .slick-next::before{
     color: black;
 }
 
 .slick-prev::before{
     color: black;
+}
+
+.slick-prev,.slick-next{
+    color: black;
+    @media screen and (max-width: 425px) {
+       display: none;
+    }
 }

@@ -3585,17 +3585,17 @@ button:hover {
         .friends__button--item {
           margin-bottom: 20px; } }
 
-.slick-prev, .slick-next {
-  color: black; }
-  @media screen and (max-width: 425px) {
-    .slick-prev, .slick-next {
-      display: none; } }
-
 .slick-next::before {
   color: black; }
 
 .slick-prev::before {
   color: black; }
+
+.slick-prev, .slick-next {
+  color: black; }
+  @media screen and (max-width: 425px) {
+    .slick-prev, .slick-next {
+      display: none; } }
 
 .thankYou {
   width: 100%;
