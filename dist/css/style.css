@@ -3262,7 +3262,8 @@ html {
 button:hover {
   -webkit-box-shadow: 0px 0px 10px #f1cdb3;
   box-shadow: 0px 0px 10px #f1cdb3;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  cursor: pointer; }
 
 .header {
   width: 100%;
