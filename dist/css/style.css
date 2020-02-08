@@ -3787,7 +3787,7 @@ button:hover {
     .donation__info__secondText {
       padding-top: 20px;
       width: 70%; }
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 767px) {
         .donation__info__secondText {
           width: 100%;
           padding-bottom: 20px; } }
