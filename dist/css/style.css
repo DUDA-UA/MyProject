@@ -3400,12 +3400,13 @@ button:hover {
 
 #toggle {
   z-index: 9;
-  position: fixed;
+  position: absolute;
   width: 40px;
   height: 36px;
   right: 20px;
   top: 20px;
-  z-index: 10; }
+  z-index: 10;
+  outline: none; }
   @media screen and (min-width: 767px) {
     #toggle {
       display: none; } }
@@ -3420,8 +3421,8 @@ button:hover {
     z-index: 21;
     opacity: 0;
     cursor: pointer;
-    position: fixed;
-    top: 20px; }
+    position: absolute;
+    top: 30px; }
     #toggle input:not(:checked) + span {
       background: transparent;
       left: 0;

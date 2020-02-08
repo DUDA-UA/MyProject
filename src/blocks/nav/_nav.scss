@@ -115,12 +115,13 @@ $color-four: #2980D9;
 
 #toggle {
     z-index: 9;
-	position: fixed;
+	position: absolute;
 	width: 40px;
 	height: 36px;
 	right: 20px;
 	top: 20px;
 	z-index: 10;
+	outline: none;
 	
 	@media screen and(min-width:767px){
 		display: none;
@@ -137,8 +138,8 @@ $color-four: #2980D9;
 		z-index: 21;
 		opacity: 0;
 		cursor: pointer;
-		position: fixed;
-		top: 20px;
+		position: absolute;
+		top: 30px;
 
 		&:not(:checked)+ span {
 				background: transparent;
