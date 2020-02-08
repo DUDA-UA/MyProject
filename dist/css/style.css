@@ -3263,7 +3263,8 @@ button:hover {
   -webkit-box-shadow: 0px 0px 10px #f1cdb3;
   box-shadow: 0px 0px 10px #f1cdb3;
   background-color: #ffffff;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .header {
   width: 100%;
@@ -3584,9 +3585,11 @@ button:hover {
         .friends__button--item {
           margin-bottom: 20px; } }
 
-@media screen and (max-width: 425px) {
-  .slick-prev, .slick-next {
-    display: none; } }
+.slick-prev, .slick-next {
+  color: black; }
+  @media screen and (max-width: 425px) {
+    .slick-prev, .slick-next {
+      display: none; } }
 
 .thankYou {
   width: 100%;
@@ -3787,7 +3790,7 @@ button:hover {
     .donation__info__secondText {
       padding-top: 20px;
       width: 70%; }
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 425px) {
         .donation__info__secondText {
           width: 100%;
           padding-bottom: 20px; } }
