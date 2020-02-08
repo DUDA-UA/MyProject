@@ -8,10 +8,14 @@ mixin donation
                 .col-xl-6
                     .donation__info
                         h3.donation__info__title In addition, you
-                        br 
-                        |can make a donation
+                            br 
+                            |can make a donation
                         .donation__info__bank
-                            input#nameBank(type="text", name="nameBank" placeholder="Name of the bank")
+                            input#nameBank.nameBank(type="text", name="nameBank" placeholder="Name of the bank" size='1')
                             span / 
                             input#nameBank(type="text", name="nameBank" placeholder="Type of bank account")
-                        input#bankCard(type="text", data-mask="0000-0000-0000-0000")
+                        .donation__info__card.d-flex.justify-content-start.alighn-center
+                            img.donation__info__card--img(src="img/credit.png", alt="credit-card")
+                            input.donation__info__card--bankCard(type="text", data-mask="0000 0000 0000 0000" placeholder="8380 2880 8028 8791")
+                        .donation__info__secondText
+                            p.donation__info__secondText--item Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.     

@@ -1,6 +1,7 @@
 include ../blocks/header/_header.pug
 include ../blocks/nav/_nav.pug
 include ../blocks/about/_about.pug
+include ../blocks/friends/_friends.pug
 include ../blocks/thankYou/_thankYou.pug
 include ../blocks/donation/_donation.pug
 include ../blocks/footer/_footer.pug
@@ -12,14 +13,20 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        link(rel="stylesheet", href="slick/slick.css")
+        link(rel="stylesheet", href="slick/slick-theme.css")
         link(rel="stylesheet", href="./css/style.css")
+        title MyProject
     body
         +header
         +about
+        +friends
         +thankYou
         +donation
         +footer
 
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+        script(type="text/javascript" src="slick/slick.min.js")
         script(src='./plugins/jquery.mask.min.js')
+        script(src="https://kit.fontawesome.com/eed4fbf255.js" crossorigin="anonymous")
+        script(src="./script/script.js")

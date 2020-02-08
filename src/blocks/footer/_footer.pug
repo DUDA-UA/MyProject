@@ -1,5 +1,29 @@
 mixin footer
     .footer
         .container
-            .row
-                
+            .row.d-flex.flex-column-reverse
+                .col-12.d-flex.flex-column.justify-content-center
+                    h3.footer__title For questions 
+                        br 
+                        |and suggestions
+                    .footer__email.footer__block
+                        img.footer__block__img(src="./img/envelope.png")
+                        a.footer__block__info(href="mailto:email@shelter.com") email@shelter.com
+                    .footer__tel.footer__block
+                        img.footer__block__img(src="./img/telephone.png")
+                        a.footer__block__info(href="tel:+13 674 567 75 54") 13 674 567 75 54
+                .col-12.d-flex.flex-column
+                    h3.footer__title We are waiting 
+                        br 
+                        |for your visit
+                    .footer__adress1.footer__block
+                        img.footer__block__img(src="./img/pin.png", alt="point1")
+                        p.footer__block__info Boston, Central Street, 1st
+                            br
+                            |(Entrance from the store)
+                    .footer__adress2.footer__block
+                        img.footer__block__img(src="./img/pin.png", alt="point2")
+                        p.footer__block__info London, South Park, 18st
+                .col-12
+                    .footer__img
+                        img.footer__img--item(src="./img/CatFooter.png")

@@ -4,26 +4,43 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <title>MyProject</title>
   </head>
   <body>
     <div class="header">
       <div class="container">
         <div class="row">
-          <div class="col-xl-6">
+          <div class="col-xl-6 col-lg-4 col-md-3 col-sm-6 col-10">
             <div class="nav__logo">
               <h1 class="nav__logo__title">Cozy House</h1>
               <p class="nav__logo__subtitle">Shelter for pets in Boston</p>
             </div>
           </div>
-          <div class="col-xl-6">
+          <div class="col-xl-6 col-lg-8 col-md-9 d-md-block d-none">
             <div class="nav__links">
               <ul class="nav__links__box d-flex justify-content-between">
                 <li class="nav__links__box--item"> <a class="nav__links__box--item-link" href="#">About the shelter</a></li>
                 <li class="nav__links__box--item"> <a class="nav__links__box--item-link" href="#">Our pets</a></li>
                 <li class="nav__links__box--item"> <a class="nav__links__box--item-link" href="#">To help the shelter</a></li>
                 <li class="nav__links__box--item"> <a class="nav__links__box--item-link" href="#">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-xl-none d-lg-none d-md-none d-sm-block col-sm-4 col-2">
+            <div id="toggle">
+              <input class="toogle__input" type="checkbox"/><span>   </span>
+            </div>
+            <div id="menu">
+              <ul class="d-flex flex-column justify-content-center align-items-center">
+                <li> <a class="nav__link nav__link--first" href="#">about us</a></li>
+                <li><a class="nav__link" href="#">project</a></li>
+                <li><a class="nav__link" href="#">
+                     news</a></li>
+                <li> <a class="nav__link" href="#">
+                     contact</a></li>
               </ul>
             </div>
           </div>
@@ -43,11 +60,11 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-6">
-            <div class="about__img"><img src="img/Pets.png"/></div>
+            <div class="about__img"><img class="about__img--item" src="img/Pets.png"/></div>
           </div>
-          <div class="col-xl-6">
-            <div class="about__box">
-              <h3 class="about__box__title">About the shelter “Cozy House”</h3>
+          <div class="col-12">
+            <div class="about__box d-flex flex-column justify-content-center">
+              <h3 class="about__box__title">About the shelter<br/>“Cozy House”</h3>
               <p class="about__box__text text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
               <p class="about__box__text">Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis ultrices pharetra. Morbi tempus at ante sit amet tristique. Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
             </div>
@@ -55,20 +72,78 @@
         </div>
       </div>
     </div>
+    <div class="friends">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="friends__title">
+              <h3 class="friends__title--item">Our friends who<br/>are looking for a hous</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="friends__slider">
+              <div class="friends__slider--item"><img class="friends__slider--item-img" src="./img/CatFriends1.png" alt="friend1"/></div>
+              <div class="friends__slider--item"><img class="friends__slider--item-img" src="./img/DogFriends2.png" alt="friend2"/></div>
+              <div class="friends__slider--item"><img class="friends__slider--item-img" src="./img/DogFriends3.png" alt="friend3"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="friends__button">
+              <button class="friends__button--item">Get to know the rest</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="thankYou">
-      <h3 class="thankYou__title">Than you can help <br/>our shelter</h3>
-      <div class="thankYou__items">
-        <ul class="thankYou__items__list">
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-          <li class="thank__items__list--item"><a href="#"></a></li>
-        </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="thankYou__title">Than you can help <br/>our shelter</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="thankYou__items">
+              <ul class="thankYou__items__list">
+                <li class="thankYou__items__list--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/cat-food.png" alt="cat-food"/>
+                    <p class="thankYou__items__list--item-link-info">Pet food</p></a></li>
+                <li class="thankYou__items__list--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/ambulance.png" alt="ambulance"/>
+                    <p class="thankYou__items__list--item-link-info">Transportation</p></a></li>
+                <li class="thankYou__items__list--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/ball.png" alt="ball"/>
+                    <p class="thankYou__items__list--item-link-info">Toys</p></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="thankYou__items">
+              <ul class="thankYou__items__list">
+                <li class="thankYou__items__list--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/bowl.png" alt="bowl"/>
+                    <p class="thankYou__items__list--item-link-info">Bowls <br/>and cups</p></a></li>
+                <li class="thankYou__items__list--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/shampoo.png" alt="shampoo"/>
+                    <p class="thankYou__items__list--item-link-info">Shampoos</p></a></li>
+                <li class="thankYou__items__list2--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/pills.png" alt="pills"/>
+                    <p class="thankYou__items__list2--item-link-info">Vitamins</p></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="thankYou__items">
+              <ul class="thankYou__items__list">
+                <li class="thankYou__items__list2--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/syringe.png" alt="syringe"/>
+                    <p class="thankYou__items__list2--item-link-info">Medicines</p></a></li>
+                <li class="thankYou__items__list2--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/leash.png" alt="leash"/>
+                    <p class="thankYou__items__list2--item-link-info">Collars <br/>leashes</p></a></li>
+                <li class="thankYou__items__list2--item"><a class="thankYou__items__list--item-link" href="#"><img class="thankYou__items__list--item-link-img" src="./img/cat.png" alt="cat"/>
+                    <p class="thankYou__items__list2--item-link-info">Sleeping<br/>area</p></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="donation">
@@ -79,12 +154,17 @@
           </div>
           <div class="col-xl-6">
             <div class="donation__info">
-              <h3 class="donation__info__title">In addition, you</h3><br/>can make a donation
+              <h3 class="donation__info__title">In addition, you<br/>can make a donation</h3>
               <div class="donation__info__bank">
-                <input id="nameBank" type="text" name="nameBank" placeholder="Name of the bank"/><span>/ </span>
+                <input class="nameBank" id="nameBank" type="text" name="nameBank" placeholder="Name of the bank" size="1"/><span>/ </span>
                 <input id="nameBank" type="text" name="nameBank" placeholder="Type of bank account"/>
               </div>
-              <input id="bankCard" type="text" data-mask="0000-0000-0000-0000"/>
+              <div class="donation__info__card d-flex justify-content-start alighn-center"><img class="donation__info__card--img" src="img/credit.png" alt="credit-card"/>
+                <input class="donation__info__card--bankCard" type="text" data-mask="0000 0000 0000 0000" placeholder="8380 2880 8028 8791"/>
+              </div>
+              <div class="donation__info__secondText">
+                <p class="donation__info__secondText--item">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.     </p>
+              </div>
             </div>
           </div>
         </div>
@@ -92,10 +172,31 @@
     </div>
     <div class="footer">
       <div class="container">
-        <div class="row"></div>
+        <div class="row d-flex flex-column-reverse">
+          <div class="col-12 d-flex flex-column justify-content-center">
+            <h3 class="footer__title">For questions <br/>and suggestions</h3>
+            <div class="footer__email footer__block"><img class="footer__block__img" src="./img/envelope.png"/><a class="footer__block__info" href="mailto:email@shelter.com">email@shelter.com</a></div>
+            <div class="footer__tel footer__block"><img class="footer__block__img" src="./img/telephone.png"/><a class="footer__block__info" href="tel:+13 674 567 75 54">13 674 567 75 54</a></div>
+          </div>
+          <div class="col-12 d-flex flex-column">
+            <h3 class="footer__title">We are waiting <br/>for your visit</h3>
+            <div class="footer__adress1 footer__block"><img class="footer__block__img" src="./img/pin.png" alt="point1"/>
+              <p class="footer__block__info">Boston, Central Street, 1st<br/>(Entrance from the store)</p>
+            </div>
+            <div class="footer__adress2 footer__block"><img class="footer__block__img" src="./img/pin.png" alt="point2"/>
+              <p class="footer__block__info">London, South Park, 18st</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="footer__img"><img class="footer__img--item" src="./img/CatFooter.png"/></div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./plugins/jquery.mask.min.js"></script>
+    <script src="https://kit.fontawesome.com/eed4fbf255.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 mixin nav
-    .col-xl-6
+    .col-xl-6.col-lg-4.col-md-3.col-sm-6.col-10
         .nav__logo
             h1.nav__logo__title Cozy House
             p.nav__logo__subtitle Shelter for pets in Boston
-    .col-xl-6
+    .col-xl-6.col-lg-8.col-md-9.d-md-block.d-none
         .nav__links
             ul.nav__links__box.d-flex.justify-content-between
                 li.nav__links__box--item 
@@ -14,3 +14,22 @@ mixin nav
                     a(href="#").nav__links__box--item-link To help the shelter
                 li.nav__links__box--item 
                     a(href="#").nav__links__box--item-link Contacts
+                    
+    .d-xl-none.d-lg-none.d-md-none.d-sm-block.col-sm-4.col-2
+        #toggle
+            input.toogle__input(type="checkbox")
+            span    
+        #menu
+            ul.d-flex.flex-column.justify-content-center.align-items-center
+                li 
+                    a.nav__link.nav__link--first(href="#")
+                        |about us
+                li
+                    a.nav__link(href="#")
+                        |project
+                li
+                    a.nav__link(href="#") 
+                        |news
+                li  
+                    a.nav__link(href="#") 
+                        |contact
