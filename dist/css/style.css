@@ -3591,6 +3591,12 @@ button:hover {
     .slick-prev, .slick-next {
       display: none; } }
 
+.slick-next::before {
+  color: black; }
+
+.slick-prev::before {
+  color: black; }
+
 .thankYou {
   width: 100%;
   padding-top: 70px; }
